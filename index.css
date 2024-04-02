@@ -477,13 +477,16 @@
     }
 
     .er-inp-del {
-        column-gap: 20px;
+        column-gap: 50px;
+        margin-top: 20px;
     }
 
     .er-range-inp {
         margin-top: 20px;
         height: 40px;
         padding: 22px;
+        padding-right: 30px;
+        margin-left: 20px;
     }
 
     .delete-icon {
