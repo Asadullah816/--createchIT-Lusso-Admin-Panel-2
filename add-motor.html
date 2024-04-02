@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lusso Admin Panel</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="phone.css" />
+</head>
+
+<body>
+    <aside id="sidebar">
+        <div class="cross-btn" onclick="crossBtn()">
+            <i class="fas fa-xmark"></i>
+        </div>
+
+        <div class="container p-0">
+            <div class="site-logo">
+                <img src="asset/images/site-logo.png" alt="" />
+            </div>
+            <div class="aside-menu">
+                <ul class="menu-ul">
+                    <li class="menu-item  d-flex justify-content-start align-items-center">
+                        <div class="menu-icon">
+                            <img src="asset/images/pro-side-icon.svg" alt="" />
+                        </div>
+                        <a class="menu-link" href="index.html">Products</a>
+                    </li>
+                    <li class="menu-item active d-flex justify-content-start align-items-center">
+                        <div class="menu-icon">
+                            <img src="asset/images/motor-icon.svg" alt="" />
+                        </div>
+                        <a class="menu-link" href="motor.html">Motors</a>
+                    </li>
+                    <li class="menu-item d-flex justify-content-start align-items-center">
+                        <div class="menu-icon">
+                            <img src="asset/images/user-icon.png" alt="" />
+                        </div>
+                        <a class="menu-link" href="user.html">Users</a>
+                    </li>
+                    <li class="menu-item d-flex justify-content-start align-items-center">
+                        <div class="menu-icon">
+                            <img src="asset/images/login-icon.svg" alt="" />
+                        </div>
+                        <a class="menu-link" href="login-req.html">Login Requests</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ================================================== -->
+    <!-- =================    MAIN CONTAINER   ============ -->
+    <div class="main-container container-fluid">
+        <div class="contianer-fluid">
+            <div class="header d-flex justify-content-between align-items-center">
+                <div class="toggle-btn" onclick="toggleSideNav()">
+                    <div class="toggle-bar"></div>
+                    <div class="toggle-bar"></div>
+                    <div class="toggle-bar"></div>
+                </div>
+                <div class="site-name">
+                    <h3>Admin Panel</h3>
+                </div>
+                <div class="admin-info d-flex justify-content-centter align-items-center">
+                    <p>Admin Name</p>
+                    <div class="user-img">
+                        <img src="asset/images/admin-pic.pngm " alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------- MAIN CONTENT ------------------------------ -->
+
+        <div class="add-motor-sec">
+            <h4>Add New Motor</h4>
+            <div class="add-motor-row row w-100">
+                <div class="col-md-6 col-12 add-motor-inp">
+                    <label for="">Motor Name</label>
+                    <input type="text" class="inputs" placeholder="Motor Name">
+                </div>
+                <div class="col-md-6 col-12 add-motor-inp">
+                    <label for="">Price in AUD</label>
+                    <input type="number" class="inputs" placeholder="$1200.00">
+                </div>
+            </div>
+            <div class="add-motor-btns d-flex justify-content-center align-items-center">
+                <a href="motor.html" class="custom-btn">Cancel</a>
+                <!-- <button type="submit" class="custom-btn dark">Save Motor</a> -->
+                <a href="motor.html" class="custom-btn dark">Save Motor</a>
+            </div>
+        </div>
+
+
+        <!-- =================== DELETE MODAL =============== -->
+
+        <!-- =================== END DELETE MODAL =============== -->
+        <!-- ================================== -->
+        <!-- ================================================== -->
+        <!-- ==============   END MAIN CONTAINER   ============ -->
+
+        <!-- MDB -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
